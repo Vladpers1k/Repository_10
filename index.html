@@ -3,11 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <div class="container">
+    <h1>Застосунок пошуку фільмів</h1>
+
+    <div class="search">
+      <div class="search__group search__group--input">
+        <label for="search" class="search__label-input">Пошук фільму</label>
+        <input type="search" class="search__input" id="search" placeholder="Почніть писати назву фільма...">
+      </div>
+
+      <div class="search__group search__group--checkbox">
+        <input type="checkbox" class="search__checkbox" id="checkbox">
+        <label for="checkbox" class="search__label-checkbox">Додати фільм до списку</label>
+      </div>
+    </div>
+
+    <div class="movies" id="movies-list"></div>
+  </div>
+
+  <script src="main.js" type="module"></script>
 
 </body>
 
